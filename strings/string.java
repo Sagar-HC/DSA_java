@@ -15,7 +15,7 @@ public class string {
 
             // String scs = sc.nextLine();
             // System.out.println(scs);
-
+//hi i am sagar
             printstr(str2);
     }
 }
