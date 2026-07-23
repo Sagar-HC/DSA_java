@@ -10,6 +10,7 @@ public class string {
     public static void main(String args []){
             String str = "aser";
             String str2 = new String("sagar");
+            String saga = new String ("hemu");
             // Scanner sc = new Scanner(System.in);
 
             // String scs = sc.nextLine();
