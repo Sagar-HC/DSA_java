@@ -8,7 +8,7 @@ public class palindrome {
             }
         }return true;
     }
-
+//shortest path code for a map
     public static float shortestPath(String str){
         int n = str.length();
         int x= 0;
