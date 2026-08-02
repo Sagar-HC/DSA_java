@@ -22,4 +22,4 @@ public class upperCase {
      System.out.println(toUpperCase("hi i am sagar hc"));
     }
 
-}
+}//it was difficult brom
