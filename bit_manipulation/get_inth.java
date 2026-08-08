@@ -12,3 +12,4 @@ public class get_inth {
         System.out.println(ith(10,2));
     }
 }
+// was quite difficult 
