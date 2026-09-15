@@ -38,11 +38,25 @@ public class get_ith {
         return (n&(n-1)) == 0 ;
     }
 
+    public static double powerDouble(int i ){
+        double ans = Math.pow(i,i);
+        return  ans;
+    }
+
+    public static void swap(int a , int b){
+        a = a^b;
+        b = a^b;
+        a = a^b;
+        System.out.print(a+ " " +b);
+    }
     
     // }
     public static void main(String[] args){
         // System.out.print(get_inth(10,2)); this is for get 
         // System.out.print(update(10,1 ,1));
-        System.out.print(powerTwo(8));
+        // System.out.print(powerTwo(8));
+
+         swap(10,11);
+
     }
 }
