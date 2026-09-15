@@ -37,6 +37,8 @@ public class get_ith {
     public static boolean powerTwo(int n){
         return (n&(n-1)) == 0 ;
     }
+
+    
     // }
     public static void main(String[] args){
         // System.out.print(get_inth(10,2)); this is for get 
