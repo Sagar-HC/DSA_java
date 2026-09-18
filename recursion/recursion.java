@@ -48,10 +48,34 @@ public class recursion {
 
         return fib;
     }
+
+    public static boolean isSorted(int arr[],int i){
+        if(i == arr.length-1){
+            return true;
+        }
+        if(arr[i]>arr[i+1]){
+            return false;
+        }
+
+        return isSorted(arr, i+1);
+    }
+
+    public static int firstRec(int arr[],int i,int n){
+       if( i == arr.length-1 && arr[i] !=n ){
+        System.out.println("number doesnt exists in the arr");
+        return -1;
+       }
+       
+        if( arr[i] == n){
+        return i;
+       };
+      return firstRec(arr, i+1, n);
+
+    }
+
     public static void main(String args[]){
-        // recurse(10);
-        // recurseInverse(10);
-        System.out.print(fibb(5));
+       int arr[] = {1,2,3,4,5,1};
+       System.out.println(firstRec(arr, 0,10));
     }
 
 }
