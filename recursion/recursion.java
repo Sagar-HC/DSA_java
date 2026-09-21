@@ -123,8 +123,19 @@ public class recursion {
         return pair(i-1)+(i-1)*pair(i-2);
     }
 
+    public static void Bstring(int n,int lastNum, String str){
+        if(n == 0){
+            System.out.println(str);
+            return;
+        }
+
+        Bstring(n-1,0,str+"0");
+        if(lastNum == 0){
+            Bstring(n-1,1,str+"1");
+        }
+    }
     public static void main(String args[]){
-    System.out.print(pair(3));
+    Bstring(3,0,"");
     }
 
 }
