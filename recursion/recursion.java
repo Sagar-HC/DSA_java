@@ -97,8 +97,34 @@ public class recursion {
         return fnm1+fnm2;
     }
 
+    public static void duplicate(String str, int i , boolean[] alp, StringBuilder newstr){
+        if( i == str.length() ){
+            System.out.print(newstr);
+            return;
+        }
+        char currChar = str.charAt(i);
+        if(alp[currChar - 'a'] == true){
+            //duplicate
+            duplicate(str, i+1, alp, newstr); 
+        }else{
+            alp[currChar - 'a'] = true;
+            duplicate(str, i+1, alp, newstr.append(currChar));
+        }
+
+    }
+
+    public static int pair(int i){
+        if(i == 1 || i == 2){
+            return i;
+        }
+        // int fnm1 = pair(i-1);
+        // int fnm2 = pair(i-2);
+        // int pairways = (i-1)*fnm2;
+        return pair(i-1)+(i-1)*pair(i-2);
+    }
+
     public static void main(String args[]){
-       System.out.println(tiles(5));
+    System.out.print(pair(3));
     }
 
 }
