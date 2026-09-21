@@ -86,10 +86,19 @@ public class recursion {
        return isFound;
      
     }
+//tiles problem with a side of length 2 and another n;
+    public static int tiles(int n){
+        if (n == 0 || n == 1){
+            return 1;
+        }
+        int fnm1 = tiles(n-1);
+        int fnm2 = tiles(n-2);
+
+        return fnm1+fnm2;
+    }
 
     public static void main(String args[]){
-       int arr[] = {1,2,3,4,5,1};
-       System.out.println(lastRec(arr, 5,0));
+       System.out.println(tiles(5));
     }
 
 }
