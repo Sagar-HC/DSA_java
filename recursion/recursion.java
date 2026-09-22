@@ -134,8 +134,16 @@ public class recursion {
             Bstring(n-1,1,str+"1");
         }
     }
+
+    public static void printarr(int arr[]){
+        for(int i = 0;i<arr.length-1;i++){
+            System.out.print(arr[i]+" ");
+        }System.out.println();
+    }
+
+
     public static void main(String args[]){
-    Bstring(3,0,"");
+    int arr[] ={1,4,3,12,5};
     }
 
 }
