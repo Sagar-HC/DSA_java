@@ -35,7 +35,7 @@ public class sort{
             k++;
         } while(i<=mid){
                 temp[k++] = arr[i++];
-            }
+            } 
             while(j<=ei){
                 temp[k++] = arr[j++];
             }
@@ -66,7 +66,7 @@ public class sort{
                 i++;
                 int temp = arr[j];
                 arr[j] = arr[i];
-                arr[i] = temp;
+                arr[i] = temp;  
              }
          } i++;
              int temp = pivot;

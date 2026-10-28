@@ -135,11 +135,11 @@ public class recursion {
         }
     }
 
-    public static void printarr(int arr[]){
-        for(int i = 0;i<arr.length-1;i++){
-            System.out.print(arr[i]+" ");
-        }System.out.println();
-    }
+        public static void printarr(int arr[]){
+            for(int i = 0;i<arr.length-1;i++){
+                System.out.print(arr[i]+" ");
+            }System.out.println();
+        }
 
 
     public static void main(String args[]){
